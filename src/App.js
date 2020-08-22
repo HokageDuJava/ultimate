@@ -1,14 +1,16 @@
-import React from "react";
+import React, { Component } from "react";
+import { v4 as uuidv4 } from "uuid";
 
 import Ninja from "./ninja/Ninja";
-import "./ninja.css";
+import "./App.css";
 
-class App extends React.Component {
+class App extends Component {
   state = {
     ninjas: [
-      { name: "Naruto", age: 35, village: "Konoha", id: 1 },
-      { name: "Sasuke", age: "32", village: "Konoha", id: 2 },
-      { name: "Itachi", age: 40, village: "Konoha", id: 3 },
+      { name: "Arzad", village: "Paisley", age: 25, id: uuidv4() },
+      { name: "Naruto", village: "Konoha", age: 32, id: uuidv4 },
+      { name: "Itachi", village: "?", age: 36, id: uuidv4() },
+      { name: "Konohamaru", village: "Konoha", age: 15, id: uuidv4() },
     ],
   };
 
